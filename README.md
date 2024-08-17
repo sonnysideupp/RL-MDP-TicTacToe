@@ -81,6 +81,6 @@ Policy Improvement
     * $\text{old-action} \leftarrow \pi(s)$
     * $V(s) \leftarrow \underset{a}{\text{argmax}} \sum_{s'} P(s'|s,a) \times (R(s') + \gamma V(s'))$
     * if $\text{old-action} \neq \pi(s)$, then $\text{policy-stable} \leftarrow false$
-* If policy-stable then stop and return $V \approx v_*$, and $\pi \approx \pi_*$; else go to policy evaluation
+* If policy-stable then stop and return $\text{V} \approx v_* $, and $\pi \approx \pi_* $; else go to policy evaluation
 
 
