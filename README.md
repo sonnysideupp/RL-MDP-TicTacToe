@@ -5,7 +5,7 @@ I trained a reinforcement learning agent to play Tic Tac Toe by modeling it as a
 
 <img src='/assets/example.png' width=400>
 
-A state is a nonuplets with values of 0, 1 or 2. 0 represents an emtpy space on the board. 1 is the circle player and 2 is the x player. The computer agent will always be the circle player and the human player will be the circle player. 
+A state is a nonuplets with values of 0, 1 or 2. 0 represents an emtpy space on the board. 1 is the circle player and 2 is the x player. The computer agent will always be the circle player and the human player will be the x player. 
 
 The reward function of the computer agent maps a state to either 1, -1 or 0. 1 for when there are three circles in a row and -1 when there are 3 x's in a row, and 0 for all other states. 
 
