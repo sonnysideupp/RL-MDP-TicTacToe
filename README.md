@@ -1,6 +1,6 @@
 # RL-MDP-TicTacToe
 
-I trained a reinforcement learning agent to play Tic Tac Toe by modeling it as a Markov Decision and optimizing the policy through Value and Policy Iteration. 
+I trained a reinforcement learning agent to play Tic Tac Toe by modeling it as a Markov Decision Process and optimizing the policy through Value and Policy Iteration. 
 
 
 <img src='/assets/example.png' width=400>
