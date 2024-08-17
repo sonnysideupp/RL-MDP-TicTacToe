@@ -12,7 +12,7 @@ The reward function of the computer agent maps a state to either 1, -1 or 0. 1 f
 $$
  \begin{equation}
  R(s') =
-   \left\{\begin{array}{lr}
+   \left\lbrace\begin{array}{lr}
        1, & \text{3 x's in a row} \\
        -1, & \text{3 o's in a row} \\
        0, & \text{otherwise}
