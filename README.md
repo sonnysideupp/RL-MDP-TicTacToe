@@ -62,7 +62,7 @@ $$
 
 Policy iteration is a two step process that involves first policy evalution and then policy improvement. The main difference is that in policy iteration we first initalize the policy to be arbitrary. And then in the evaluation step instead of using the action that maximizes the value function, we use our current policy. We then iteratively evaluate that policy and then improve it. 
 
-* Initialize $V(s) \in \mathbb{R}$ and $ \pi(s) \in A(s)$ arbitrarily for all $s \in S$
+* Initialize $V(s) \in \mathbb{R}$ and $\pi(s) \in A(s)$ arbitrarily for all $s \in S$
   
 Policy Evaluation
 
