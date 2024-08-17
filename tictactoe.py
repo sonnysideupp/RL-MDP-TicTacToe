@@ -36,8 +36,7 @@ class TicTacToeGUI:
         self.HEIGHT = -2*self.STARTY
         self.turn=1
         self.working=False
-        print("init successful")
-    def draw_rectangle(self, x,y,w,h,color):
+    def draw_rectangle(self, x,y,w,h):
         turtle.up()
         turtle.goto(x,y)
         turtle.seth(0)
@@ -112,7 +111,7 @@ class TicTacToeGUI:
                     self.draw_X(X,Y)
 
     def draw_board(self):
-        self.draw_rectangle(self.STARTX,self.STARTY,self.WIDTH,self.HEIGHT,'light blue')
+        self.draw_rectangle(self.STARTX,self.STARTY,self.WIDTH,self.HEIGHT)
     def draw(self):
         self.init_board()
         self.draw_board()
@@ -138,7 +137,7 @@ class TicTacToeGUI:
     def play(self, x,y):
         # if self.working: return
         # self.working = True
-        print("clicking", x, y)
+      
         (row, col) = self.coordiate_to_index(x,y)
         self.board[row * self.ROWS + col] = 2
         self.draw_pieces()
@@ -171,7 +170,7 @@ class TicTacToeGUI:
         win_combinations = [(0, 1, 2), (3, 4, 5), (6, 7, 8), (0, 3, 6), (1, 4, 7), (2, 5, 8), (0, 4, 8), (2, 4, 6)]
         for combo in win_combinations:
             a, b, c = combo
-            print("self.board", self.board)
+          
             if (
                 self.board[a] == self.board[b] == self.board[c]
                 and self.board[a] != 0
